@@ -1,0 +1,46 @@
+package string.reversestring;
+
+public class ReverseString {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s = "This is test string";
+		ReverseString rs = new ReverseString();
+		rs.usingSingleCharArray(s);
+	}
+	
+	public void usingSingleCharArray(String s){
+		char[] charArr = s.toCharArray();
+		
+		char temp;
+		for(int i=0;i<charArr.length/2;i++){   //loop only 1/2 of the string length else it'll start replacing again.
+			temp = charArr[i];
+			
+			charArr[i] = charArr[charArr.length - (i+1)];
+			charArr[charArr.length - (i+1)] = temp;
+		}
+		System.out.println(String.copyValueOf(charArr));
+		
+	}
+	
+	public void usingMultipleCharArray(String s){
+		char[] charArr = s.toCharArray();
+		
+		char[] newString = new char[charArr.length];
+		for(int i=0;i<charArr.length;i++){   //loop only 1/2 of the string length else it'll start replacing again.
+			temp = charArr[i];
+			
+			charArr[i] = charArr[charArr.length - (i+1)];
+			charArr[charArr.length - (i+1)] = temp;
+		}
+		
+	}
+	
+	public void usingRecurssion(String s){
+		char[] charArr = s.toCharArray();
+		
+	}
+
+}

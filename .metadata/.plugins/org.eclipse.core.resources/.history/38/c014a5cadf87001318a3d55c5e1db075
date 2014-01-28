@@ -1,0 +1,18 @@
+package string.reversestring;
+
+public class ReverseString {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String s = "This is test string";
+		
+	}
+	
+	public void usingSingleCharArray(String s){
+		char[] charArr = s.toCharArray();
+		
+	}
+
+}
