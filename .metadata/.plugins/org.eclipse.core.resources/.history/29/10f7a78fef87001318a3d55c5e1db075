@@ -1,0 +1,12 @@
+package string;
+
+public class CheckPalindrome {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	}
+
+}

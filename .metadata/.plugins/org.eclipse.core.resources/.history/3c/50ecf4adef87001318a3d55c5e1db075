@@ -1,0 +1,12 @@
+package string;
+
+public class CheckPalindrome {
+
+	/**
+	 * Palindrome is string which reads as same from both sides forward or backward. i.e. "112211";
+	 */
+	public static void main(String[] args) {
+		
+	}
+
+}
