@@ -1,0 +1,71 @@
+package array;
+
+import java.util.Arrays;
+
+public class SeperateEvenOddNumbers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		int[] numbers = {2,8,3,7,0,4,4,6,5,8,8,8,9,3};
+		
+		seperateEvenOddNumbers1(numbers);
+		seperateEvenOddNumbers2(numbers);
+		
+	}
+	
+	public static void seperateEvenOddNumbers1(int[] numbers){
+		int temp = 0;
+		int i =0;
+		int j = numbers.length -1;
+		while(i<j){
+			if(numbers[i]%2==0){
+				i++;
+			}
+			if(numbers[j]%2!=0){
+				j--;
+			}
+			if(i<j){
+				temp = numbers[i];
+				numbers[i] = numbers[j];
+				numbers[j] = temp;
+			}
+		}
+		
+		System.out.println(Arrays.toString(numbers));
+	}
+	
+	public static void seperateEvenOddNumbers2(int[] numbers){
+		int temp = 0;
+		int j = 0;
+		for(int i=0;i<numbers.length;i++){
+			if(numbers[i]%2!=0){
+				for(j=i;j<numbers.length;j++){
+					if(numbers[j]%2==0){
+						temp = numbers[i];
+						numbers[i] = numbers[j];
+						numbers[j] = temp;
+					}
+				}
+			}
+		}
+		
+		System.out.println(Arrays.toString(numbers));
+	}
+	
+	public static void seperateEvenOddNumbers3(int[] numbers){
+		int temp = 0;
+		int j = 0;
+		for(int i=0;i<numbers.length;i++){
+			if(numbers[i]%2==0){
+				temp = numbers[i];
+				numbers[i] = numbers[j];
+				numbers[j] = temp;
+			}
+		}
+		
+		System.out.println(Arrays.toString(numbers));
+	}
+
+}

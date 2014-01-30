@@ -40,7 +40,7 @@ public class CheckPalindrome {
 			j++;
 		}
 		
-		if(String.copyValueOf(c).equals(s)){
+		if(new String(c).equals(s)){
 			System.out.println("This is palindrome");
 		}else{
 			System.out.println("This is not palindrome");
