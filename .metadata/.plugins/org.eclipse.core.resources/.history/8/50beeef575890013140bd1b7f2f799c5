@@ -1,0 +1,73 @@
+package thread;
+
+public class Deadlock extends Thread{
+
+	/**
+	 * @param args
+	 */
+	
+	final static Object resourse1 = "resource1";
+	final static Object resourse2 = "resourse2";
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void run(){
+		synchronized(resourse1){
+			System.out.println("Thread 1 is blocking resourse 1");
+		}
+		try{
+			Thread.sleep(50);
+		}catch(InterruptedException e){
+			
+		}
+		synchronized (resourse2) {
+			System.out.println("Thread 1 is blocking resourse 2");
+		}
+		
+	}
+
+	public static void thread1(){
+		Thread t1 = new Thread(){
+			public void run(){
+				synchronized(resourse1){
+					System.out.println("Thread 1 is blocking resourse 1");
+				}
+				try{
+					Thread.sleep(50);
+				}catch(InterruptedException e){
+					
+				}
+				synchronized (resourse2) {
+					System.out.println("Thread 1 is blocking resourse 2");
+				}
+				
+			}
+		};
+	}
+	
+	public static void thread2(){
+		Thread t1 = new Thread(){
+			public void run(){
+				synchronized(resourse2){
+					System.out.println("Thread 1 is blocking resourse 1");
+				}
+				try{
+					Thread.sleep(50);
+				}catch(InterruptedException e){
+					
+				}
+				synchronized (resourse1) {
+					System.out.println("Thread 1 is blocking resourse 2");
+				}
+				
+			}
+		};
+	}
+	
+	
+
+	
+}

@@ -1,0 +1,25 @@
+package thread;
+
+public class Deadlock extends Thread{
+
+	/**
+	 * @param args
+	 */
+	
+	final Object resourse1 = "resource1";
+	final Object resourse2 = "resourse2";
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void run(){
+		Syncronised(resourse1);
+	}
+
+	
+	
+
+	
+}

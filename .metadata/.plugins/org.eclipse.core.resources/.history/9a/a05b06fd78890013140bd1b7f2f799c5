@@ -1,0 +1,30 @@
+package thread;
+
+public class DeadlockUsingRunnableInterface {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class SyncThread implements Runnable{
+	
+	private Object res1="resource1";
+	private Object res2="resource2";
+	
+	public SyncThread(Object r1, Object r2){
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package thread;
+
+public class DeadlockUsingRunnableInterface {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class SyncThread implements Runnable{
+	
+}

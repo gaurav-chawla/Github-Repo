@@ -1,0 +1,13 @@
+package thread;
+
+public class Deadlock {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

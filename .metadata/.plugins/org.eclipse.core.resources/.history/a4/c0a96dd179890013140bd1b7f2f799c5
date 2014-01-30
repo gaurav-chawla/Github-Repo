@@ -1,0 +1,37 @@
+package thread;
+
+public class DeadlockUsingRunnableInterface {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1 = new Thread(new SyncThread(), "t1");
+		Thread t1 = new Thread(new SyncThread(), "t2");
+	}
+
+}
+
+class SyncThread implements Runnable{
+	
+	final Object res1="resource1";
+	final Object res2="resource2";
+
+	@Override
+	public void run() {
+		synchronized(res1){
+			System.out.println("This is res1");
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			synchronized (res2) {
+				System.out.println("This is res2");
+			}
+		}
+	}
+	
+}
