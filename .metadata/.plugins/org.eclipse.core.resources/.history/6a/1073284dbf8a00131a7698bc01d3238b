@@ -1,0 +1,28 @@
+package array;
+
+public class FibonacciSeries {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] fs = usingSingleArray(10);
+		
+		System.out.println(fs.toString());
+	}
+	
+	public static int[] usingSingleArray(int lenght){
+		
+		int[] fs = new int[lenght];
+		for(int i =0;i<lenght;i++){
+			if(i == 0 || i == 1){
+				fs[i] = i;
+			}else{
+				fs[i] = fs[i-1] + fs[i-2];
+			}
+		}
+		return fs;	
+	}
+
+}

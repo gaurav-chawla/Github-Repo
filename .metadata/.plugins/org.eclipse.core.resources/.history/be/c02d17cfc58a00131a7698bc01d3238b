@@ -1,0 +1,44 @@
+package array;
+
+import java.util.Arrays;
+
+public class FibonacciSeries {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] fs = usingSingleArray(10);
+		
+		System.out.println(Arrays.toString(fs));
+		
+		int[] fs1= new int[10];
+		for(int i=0;i<10;i++)
+			fs1 = usingReccursion(i);
+		
+		System.out.println(Arrays.toString(fs));
+	}
+	
+	public static int[] usingSingleArray(int lenght){
+		
+		int[] fs = new int[lenght];
+		for(int i =0;i<lenght;i++){
+			if(i == 0 || i == 1){
+				fs[i] = i;
+			}else{
+				fs[i] = fs[i-1] + fs[i-2];
+			}
+		}
+		return fs;	
+	}
+	
+	public static int usingReccursion(int length){
+		
+		if(length==0 || length == 1)
+			return length;
+		else
+			return usingReccursion(length -1) + usingReccursion(length-2);
+	}
+
+}
