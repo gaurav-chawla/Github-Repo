@@ -1,0 +1,13 @@
+package design_patterns.creational.factory;
+
+public class USDImpl {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

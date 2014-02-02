@@ -1,0 +1,16 @@
+package design_patterns.creational.factory;
+
+public class TestFactory {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String country = "USA";
+		
+		CurrencyFactory cf = new CurrencyFactory();
+		cf.
+
+	}
+
+}

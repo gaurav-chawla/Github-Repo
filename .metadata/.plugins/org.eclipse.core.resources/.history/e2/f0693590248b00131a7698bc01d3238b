@@ -1,0 +1,14 @@
+package design_patterns.creational.factory;
+
+public class CurrencyFactory {
+	
+	public static ICurrency currencyFactory(String country){
+		if(country.equals("USA")){
+			return new USDImpl();
+		}else if(country.equals("EURO")){
+			return new EuroImpl();
+		}else{
+			return new RupeeImpl();
+		}
+	}
+}

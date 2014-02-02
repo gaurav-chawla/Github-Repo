@@ -1,0 +1,17 @@
+package design_patterns;
+
+public class Singleton {
+
+	private static Singleton singletonObject;
+	
+	protected Singleton(){
+		
+	}
+	
+	public static Singleton getInstance(){
+		if(singletonObject == null){
+			singletonObject = new Singleton();
+		}
+		return singletonObject;
+	}
+}

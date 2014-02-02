@@ -1,0 +1,6 @@
+package design_patterns;
+
+public class Singleton {
+
+	private static Singleton singletonObject;
+}
