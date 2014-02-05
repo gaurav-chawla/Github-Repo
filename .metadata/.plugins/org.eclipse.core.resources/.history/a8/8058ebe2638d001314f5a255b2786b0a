@@ -1,0 +1,22 @@
+package colleaction;
+
+
+public class SortFruitObject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Fruit[] fruit = new Fruit[3];
+		
+		Fruit a = new Fruit("Apple", 30, "apple fruit");
+		Fruit b = new Fruit("Banana", 24, "banana fruit");
+		Fruit c = new Fruit("Kiwi", 45, "Kiwi fruit");
+		
+		fruit[0] = c;
+		fruit[1] = a;
+		fruit[2] = b;
+		
+	}
+
+}

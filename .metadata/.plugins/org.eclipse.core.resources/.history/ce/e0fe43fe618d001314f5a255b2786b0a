@@ -1,0 +1,22 @@
+package colleaction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SortFruitObject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		List<Fruit> fruitList = new ArrayList<Fruit>();
+		
+		Fruit f1 = new Fruit();
+		f1.setFruitName("Banana");
+		f1.setQuantity(12);
+		
+		
+		fruitList.add(f1);
+	}
+
+}

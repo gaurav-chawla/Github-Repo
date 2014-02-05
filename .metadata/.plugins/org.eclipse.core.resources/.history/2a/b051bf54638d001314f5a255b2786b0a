@@ -1,0 +1,18 @@
+package colleaction;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class SortFruitObject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		List<Fruit> fruitList = new ArrayList<Fruit>();
+		
+		
+	}
+
+}

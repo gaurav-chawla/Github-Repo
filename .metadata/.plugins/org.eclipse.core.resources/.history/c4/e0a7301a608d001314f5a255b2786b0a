@@ -1,0 +1,9 @@
+package colleaction;
+
+public class Fruit {
+
+	private String fruitName;
+	private Integer quantity;
+	private String desc;
+
+}

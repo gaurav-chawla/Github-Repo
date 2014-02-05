@@ -1,0 +1,14 @@
+package colleaction;
+
+
+public class SortFruitObject {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Fruit[] fruit = new Fruit[4];
+		
+	}
+
+}

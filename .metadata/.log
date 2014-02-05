@@ -3293,3 +3293,233 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+!SESSION 2014-02-03 21:44:45.200 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/gaurav.chawla/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/gaurav.chawla/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-02-03 21:46:35.554
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-02-03 21:46:36.388
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-02-03 21:46:36.390
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.eclipse.jface 2 0 2014-02-03 21:46:36.474
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-02-03 21:46:36.474
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6c07125,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.MakeHandlersGo@44443799,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@5a9e40d2,,true),[Lorg.eclipse.core.commands.Parameterization;@4bb1c978),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-02-03 21:46:36.474
+!MESSAGE A conflict occurred for ALT+COMMAND+T:
+Binding(ALT+COMMAND+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5b0a5c37,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,Show Refactor Quick Menu,
+		Shows the refactor quick menu,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@71d88788,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-02-03 21:47:02.169
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.RuntimeException: Error while reading server.xml
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:146)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.getServerXMLDOM(TomcatContextReaderImpl.java:133)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.executeServerPortExpression(TomcatContextReaderImpl.java:242)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.loadConfig(TomcatContextReaderImpl.java:227)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getConfig(Tomcat.java:51)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getHostPort(Tomcat.java:96)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getURL(Tomcat.java:85)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.fetchTomcatState(Tomcat.java:110)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.isRunning(Tomcat.java:101)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.getImageName(TomcatDecorator.java:35)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.decorate(TomcatDecorator.java:30)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:287)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:208)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:143)
+	... 18 more
+
+!ENTRY org.eclipse.ui 4 4 2014-02-03 21:47:02.174
+!MESSAGE Exception in Decorator. The 'Tomcat Runtime State Decoration' decorator will be disabled.
+
+!ENTRY org.eclipse.ui 4 4 2014-02-03 21:47:02.185
+!MESSAGE Error while reading server.xml
+!STACK 0
+org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:287)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:208)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:143)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.getServerXMLDOM(TomcatContextReaderImpl.java:133)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.executeServerPortExpression(TomcatContextReaderImpl.java:242)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.loadConfig(TomcatContextReaderImpl.java:227)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getConfig(Tomcat.java:51)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getHostPort(Tomcat.java:96)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getURL(Tomcat.java:85)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.fetchTomcatState(Tomcat.java:110)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.isRunning(Tomcat.java:101)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.getImageName(TomcatDecorator.java:35)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.decorate(TomcatDecorator.java:30)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-02-04 16:30:51.790 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/gaurav.chawla/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/gaurav.chawla/github/Github-Repo -product org.eclipse.epp.package.jee.product -keyring /Users/gaurav.chawla/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-02-04 16:31:01.508
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-02-04 16:31:01.842
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2014-02-04 16:31:01.843
+!MESSAGE Could not load repository template extension contributed by org.springsource.ide.eclipse.dashboard.ui with connectorKind jira
+
+!ENTRY org.eclipse.jface 2 0 2014-02-04 16:31:01.951
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-02-04 16:31:01.951
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.MakeHandlersGo@656856e3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.MakeHandlersGo@25208518,
+		[Lorg.eclipse.e4.ui.internal.workbench.Parameter;@7a01fdb2,,true),[Lorg.eclipse.core.commands.Parameterization;@18b6efb2),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-02-04 16:31:01.952
+!MESSAGE A conflict occurred for ALT+COMMAND+T:
+Binding(ALT+COMMAND+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@12329bcb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,Show Refactor Quick Menu,
+		Shows the refactor quick menu,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@389235c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-02-04 16:31:12.079
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.RuntimeException: Error while reading server.xml
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:146)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.getServerXMLDOM(TomcatContextReaderImpl.java:133)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.executeServerPortExpression(TomcatContextReaderImpl.java:242)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.loadConfig(TomcatContextReaderImpl.java:227)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getConfig(Tomcat.java:51)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getHostPort(Tomcat.java:96)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getURL(Tomcat.java:85)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.fetchTomcatState(Tomcat.java:110)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.isRunning(Tomcat.java:101)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.getImageName(TomcatDecorator.java:35)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.decorate(TomcatDecorator.java:30)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:287)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:208)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:143)
+	... 18 more
+
+!ENTRY org.eclipse.ui 4 4 2014-02-04 16:31:12.153
+!MESSAGE Exception in Decorator. The 'Tomcat Runtime State Decoration' decorator will be disabled.
+
+!ENTRY org.eclipse.ui 4 4 2014-02-04 16:31:12.176
+!MESSAGE Error while reading server.xml
+!STACK 0
+org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:287)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:208)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.parseServerXMLDOM(TomcatContextReaderImpl.java:143)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.getServerXMLDOM(TomcatContextReaderImpl.java:133)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.executeServerPortExpression(TomcatContextReaderImpl.java:242)
+	at org.uqbar.eclipse.tomcat.xt.loader.TomcatContextReaderImpl.loadConfig(TomcatContextReaderImpl.java:227)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getConfig(Tomcat.java:51)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getHostPort(Tomcat.java:96)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.getURL(Tomcat.java:85)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.fetchTomcatState(Tomcat.java:110)
+	at org.uqbar.eclipse.tomcat.xt.model.Tomcat.isRunning(Tomcat.java:101)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.getImageName(TomcatDecorator.java:35)
+	at org.uqbar.eclipse.tomcat.xt.context.decorator.TomcatDecorator.decorate(TomcatDecorator.java:30)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:371)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:331)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

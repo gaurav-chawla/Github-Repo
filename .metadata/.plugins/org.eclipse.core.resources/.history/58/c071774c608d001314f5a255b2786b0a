@@ -1,0 +1,21 @@
+package colleaction;
+
+public class Fruit {
+
+	private String fruitName;
+	private int quantity;
+	private String desc;
+	
+	public String getFruitName(){
+		return fruitName;
+	}
+	
+	public void setFruitName(String fruitName){
+		this.fruitName = fruitName;
+	}
+	
+	public int getQuantity(){
+		return quantity;
+	}
+
+}
